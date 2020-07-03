@@ -56,9 +56,12 @@ function runEnter() {
     
     // filter() uses the custom function as its argument
     var exactDateData = tableData.filter(exactDate);
+    
 
     // Re-populate the data
-    populateTable(exactDateData)
+    if (inputValue.length > 0){
+        populateTable(exactDateData)
+    }
 }
 
 
